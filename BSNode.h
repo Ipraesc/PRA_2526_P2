@@ -5,22 +5,22 @@
 template <typename T>
 class BSNode {
 
-public:
+  public:
 
-  T elem;
-  BSNode<T>* left;
-  BSNode<T>* right;
+    T elem;
+    BSNode<T>* left;
+    BSNode<T>* right;
 
-  BSNode(T elem, BSNode<T>* left = nullptr, BSNode<T>* right = nullptr)
-    : elem(elem), left(left), right(right) {}
+    BSNode(T elem, BSNode<T>* left = nullptr, BSNode<T>* right = nullptr)
+      : elem(elem), left(left), right(right) {}
 
-  friend std::ostream& operator<<(std::ostream& out, const BSNode<T>& bsn) {
+    friend std::ostream& operator<<(std::ostream& out, const BSNode<T>& bsn) {
         
-    out << bsn.elem;
+      out << bsn.elem;
 
-    return out;
+      return out;
 
-  }
+    }
 
 };
 
