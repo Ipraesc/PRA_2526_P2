@@ -117,6 +117,8 @@ class HashTable: public Dict<V> {
 
       friend std::ostream& operator << (std::ostream& out, const HashTable<V>& ht) {
 
+        out << "HashTable [entries: " << ht.n << ", capacity: " << ht.max << "]\n";
+
         for (int i = 0; i < ht.max; i++) {
 
           out << "Cubeta " << i << ": " <<ht.table[i] << "\n";
