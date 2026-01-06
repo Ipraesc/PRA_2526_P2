@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include "Dict.h"
 #include "TableEntry.h"
-#include "../P1/ListLinked.h"
+#include "../PRA_2526_P1/ListLinked.h"
 
 template <typename V>
 
